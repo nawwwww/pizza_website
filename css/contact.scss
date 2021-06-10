@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    .mainC {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        >div {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: flex-start;
+                padding: 15px;
+                box-sizing: border-box;
+                .formTxt {
+                    padding-top: 15px;
+                    box-sizing: border-box;
+                    color: white;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                }
+                button {
+                    margin-top: 20px;
+                    width: 100px;
+                    height: 50px;
+                    color: black;
+                    background-color: rgb(250, 197, 100);
+                    border: rgb(250, 197, 100);
+                    font-size: 20px;
+                    font-family: 'Poppins', sans-serif;
+                }
+                #form_message {
+                    display: block;
+                    width: 100%;
+                    max-width: 400px;
+                    max-height: 200px;
+                    background-color: black;
+                    color: white;
+                }
+
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    background-color: black;
+                    border: none;
+                    border-bottom: 2px solid grey;
+                    color: white;
+                    font-size: 40px;
+                    text-align: center;
+                }
+
+            }
+        }   
+    }
+    .mainChead {
+        font-size: 40px;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    footer {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        height: fit-content;
+    }
+    body .mainC {
+        display: block;
+    }
+    body .mainC > div:nth-child(2) {
+        width: 100%;
+        height: fit-content;
+    }
+    body .mainC > div:nth-child(1) {
+        width: 100%;
+        height: 50vh;
+    }
+
+    body .mainC > div form {
+        padding-top: 40px;
+        height: fit-content;
+    }
+    footer {
+        height: fit-content;
+    }
+
+}

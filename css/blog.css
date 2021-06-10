@@ -1,0 +1,161 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: url("../img/bg_4.jpg");
+}
+
+body .head {
+  font-size: 40px;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+body .headDescC {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .headDescC div.headDescSub {
+  width: 70%;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+body .blogMain {
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .blogMain article.blogMainC {
+  -webkit-box-flex: 0.25;
+      -ms-flex: 0.25;
+          flex: 0.25;
+  height: 500px;
+}
+
+body .blogMain article.blogMainC > div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body .blogMain article.blogMainC > div:nth-child(1) img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .blogMain article.blogMainC .fhflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  padding-top: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .blogMain article.blogMainC .fhflex img {
+  width: 15px;
+  height: 15px;
+}
+
+body .blogMain article.blogMainC .fhflex .repDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  height: 15px;
+  margin-right: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .blogMain article.blogMainC .fhflex .repDate > div:nth-child(1) {
+  margin-right: 5px;
+}
+
+body .blogMain article.blogMainC .fhflex .repDate .fhxx {
+  color: white;
+}
+
+body .blogMain article.blogMainC .blogMainChead {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+body .blogMain article.blogMainC .blogMainCdescr {
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  body .blogMain {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .blogMain article.blogMainC {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .blogMain article.blogMainC > div:nth-child(1) img {
+    height: 400px;
+  }
+  footer {
+    padding-top: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  body .headDescC {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .blogMain article.blogMainC > div:nth-child(1) img {
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/food.png");
+}
+
+body .head {
+  font-size: 40px;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+body .headDescC {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .headDescC div.headDescSub {
+  width: 70%;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+body main.someClass {
+  background-image: url("../img/food.png");
+  height: 75vh;
+}
+
+body main.someClass section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main.someClass section > div {
+  -webkit-box-flex: 0.25;
+      -ms-flex: 0.25;
+          flex: 0.25;
+  height: 75vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main.someClass section > div > div:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #634000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+body main.someClass section > div > div:nth-child(1) img {
+  width: 80px;
+  height: 80px;
+}
+
+body main.someClass section > div > div:nth-child(2) {
+  color: black;
+  font-size: 25px;
+  padding-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+body main.someClass section > div > div:nth-child(3) {
+  color: #4d4d4d;
+  font-size: 15px;
+  padding-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 605px) {
+  body main.someClass section {
+    display: block;
+  }
+  body main.someClass {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body main.someClass section > div {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .headDescC {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+/*# sourceMappingURL=services.css.map */

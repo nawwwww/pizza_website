@@ -1,0 +1,217 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 80vh;
+  width: 100%;
+}
+
+body .m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .upperBlock {
+  height: 20vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body .upperBlock .upperBlockCleftsubCsubChead {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  overflow: hidden;
+}
+
+body .upperBlock .upperBlockCleftsubCsubCdesc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: grey;
+  height: 10vh;
+  overflow: hidden;
+}
+
+body .upperBlock .upperBlockCleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  padding: 10px;
+}
+
+body .upperBlock .upperBlockCleft .upperBlockCleftsubC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.33;
+      -ms-flex: 0.33;
+          flex: 0.33;
+}
+
+body .upperBlock .upperBlockCleft .upperBlockCleftsubC > div:nth-child(2) {
+  padding-left: 10px;
+}
+
+body .upperBlock .upperBlockCleft .upperBlockCleftsubC img {
+  height: 25px;
+  width: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .upperBlock .upperBlockCright {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  background-color: #fac564;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .upperBlock .upperBlockCrightCsub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .upperBlock .fcl {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #fac564;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .upperBlock .fcl img {
+  width: 50%;
+  height: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .upperBlock .fcl img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+body .bottomBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url(../img/bg_4.jpg);
+}
+
+body .bottomBlock > div.bottomBlockImg1 {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .bottomBlock > div.bottomBlockImg1 img {
+  width: 100%;
+  height: auto;
+}
+
+body .bottomBlock .bottomBlockSubC {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  padding-left: 20px;
+  padding-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .bottomBlock .bottomBlockSubC .bottomBlockSubCSubCHead {
+  color: white;
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body .bottomBlock .bottomBlockSubC .pzIMG {
+  width: 30px;
+  height: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #fac564;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .bottomBlock .bottomBlockSubC .pzIMG img {
+  width: 100%;
+  height: 100%;
+}
+
+body .bottomBlock .bottomBlockSubC .pzTXT {
+  color: #fac564;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+}
+
+body .bottomBlock .bottomBlockSubC .bottomBlockSubCSubCDesc {
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  body .upperBlock {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: block;
+  }
+  body .upperBlock .upperBlockCright {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .bottomBlock {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  body .upperBlock .upperBlockCleft {
+    display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+/*# sourceMappingURL=about.css.map */

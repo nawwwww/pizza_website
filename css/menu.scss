@@ -1,0 +1,256 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    background-image: url('../img/bg_4.jpg');
+    background-size: cover;
+    width: 100%;
+    .h1 {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .headDescription {
+        color: grey;
+        font-size: 20px;
+        font-weight: lighter;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    .row {
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 3.3fr 3.3fr 3.3fr;
+
+    }
+    .menuContainer {
+        display: flex;
+        flex: 0.33;
+        height: 200px;
+    }
+    .menuOrderContainer {
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        >div:nth-child(1) {
+            font-family: 'Poppins', sans-serif;
+            color: rgb(250, 197, 100);
+            font-size: 20px;
+            flex: 0.5;
+            text-align: center;
+        }
+        >div:nth-child(2) {
+            flex: 0.5;
+        }
+    }
+    .menuInfoContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        background-image: url('../img/bg_4.jpg');
+    }
+    .menuItemHeader {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .menuItemDescript {
+        font-family: 'Poppins', sans-serif;
+        color: grey;
+        font-size: 15px;
+        overflow: hidden;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .menuImg {
+        width:200px;
+        height: 200px;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    p.flip {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    p.flip:before {
+        position: absolute;
+        bottom: 4px;
+        left: 100px;
+        right: 0;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: #8d5d05;
+        margin: 0 auto;
+    }
+    p.flip span.deg1 {
+        position: absolute;
+        bottom: 2px;
+        left: -30px;
+        right: 0;
+        width: 6px;
+        height: 6px;
+        content: "";
+        background: #fac564;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        margin: 0 auto;
+    }
+    p.flip span.deg2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        content: "";
+        background: #fac564;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        margin: 0 auto;
+    }
+    p.flip span.deg3 {
+        position: absolute;
+        bottom: 2px;
+        left: 30px;
+        right: 0;
+        width: 6px;
+        height: 6px;
+        content: "";
+        background: #fac564;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        margin: 0 auto;
+    }
+    p.flip:after {
+        position: absolute;
+        bottom: 4px;
+        left: -100px;
+        right: 0;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: #8d5d05;
+        margin: 0 auto;
+    }
+    .mainMenuContainer {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .mainMenuBlock {
+        width: 50%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    .menuItemContainer {
+        margin: 5px;
+        width: 90%;
+        height: 100px;
+        display: flex;
+        img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+    }
+    .menuItemSubCont {
+        width: 100%;
+        height: 100px;
+    }
+    .menuItemName {
+        font-size: 20px;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        border-bottom: 1px dashed rgb(250, 197, 100);
+        vertical-align: bottom;
+        margin: 5px;
+        box-sizing: border-box;
+        height: 25px;
+    }
+    .menuItemDescr {
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: grey;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+        height: 75px;
+    }
+    .menuItemPrice {
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 20px;
+        color:rgb(250, 197, 100);
+        vertical-align: bottom;
+        font-family: 'Poppins', sans-serif;
+    }
+    .rev {
+        display: flex;
+    }
+    .nrev {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    body .row {
+        grid-template-columns: 5fr 5fr;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    body .row {
+        grid-template-columns: 1fr;
+    }
+    body .mainMenuContainer {
+        flex-direction: column;
+    }
+    body .mainMenuBlock {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    body .nrev {
+        flex-direction: column;
+    }
+    body .rev {
+        flex-direction: column-reverse;
+    }
+
+    body .menuContainer {
+        height: 500px;
+    }
+
+    body .row {
+        grid-template-rows: auto auto;
+    }
+}

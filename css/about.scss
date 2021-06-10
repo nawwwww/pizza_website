@@ -1,0 +1,144 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+    width: 100%;
+    .m {
+        display: flex;
+        height: fit-content;
+    }
+    .upperBlock {
+        height: 20vh;
+        background-color: black;
+        display: flex;
+        width: 100%;
+        .upperBlockCleftsubCsubChead{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: white;
+            overflow: hidden;
+        }
+        .upperBlockCleftsubCsubCdesc {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: grey;
+            height: 10vh;
+            overflow: hidden;
+        }
+        .upperBlockCleft {
+            display:flex;
+            flex: 0.6;
+            padding: 10px;
+            .upperBlockCleftsubC {
+                display: flex;
+                flex: 0.33;
+                >div:nth-child(2){
+                    padding-left: 10px;
+                }
+                img {
+                    height: 25px;
+                    width: 25px;
+                    object-fit: cover;
+                }
+            }
+        }
+        .upperBlockCright {
+            flex: 0.4;
+            background-color: #fac564;
+            display: flex;
+            align-items: center;
+        }
+        .upperBlockCrightCsub {
+            display: flex;
+            align-items: center;
+        }
+        .fcl {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: #fac564;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            img {
+                width: 50%;
+                height: 50%;
+                transition: 1s;
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+    .bottomBlock {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        background-image: url(../img/bg_4.jpg);
+        >div.bottomBlockImg1 {
+            flex: 0.5;
+            height: fit-content;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        .bottomBlockSubC {
+            flex: 0.5;
+            padding-left: 20px;
+            padding-top: 20px;
+            box-sizing: border-box;
+            .bottomBlockSubCSubCHead {
+                color: white;
+                font-size: 30px;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            .pzIMG {
+                width: 30px;
+                height: 30px;
+                display: inline-flex;
+                color: #fac564;
+                align-items: center;  
+                img {
+                    width: 100%;
+                    height: 100%;
+                }   
+            }
+            .pzTXT {
+                color: #fac564;
+                font-family: 'Josefin Sans', sans-serif; 
+                font-size: 30px;
+            }  
+            .bottomBlockSubCSubCDesc {
+                padding-top: 30px;
+                box-sizing: border-box;
+                font-size: 20px;
+                color: grey;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body .upperBlock {
+        height: fit-content;
+        display: block;
+    }
+    
+    body .upperBlock .upperBlockCright {
+        justify-content: center;
+    }
+
+    body .bottomBlock {
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 630px) {
+    body .upperBlock .upperBlockCleft {
+        display: block;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background: url('../img/bg_4.jpg'); 
+    .head {
+        font-size: 40px;
+        padding-top: 60px;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        text-align: center;
+    }
+    .headDescC {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div.headDescSub {
+            width: 70%;
+            color: grey;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+    }
+    .blogMain {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        article.blogMainC {
+            flex: 0.25;
+            height: 500px;
+            >div:nth-child(1){
+                display: flex;
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+            .fhflex {
+                display: flex;
+                margin-left: 15px;
+                padding-top: 15px;
+                box-sizing: border-box;
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+                .repDate {
+                    display: flex;
+                    flex: 0.3;
+                    height: 15px;
+                    margin-right: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    >div:nth-child(1) {
+                        margin-right: 5px;
+                    }
+                    .fhxx {
+                        color:white;
+                    }
+                }
+            }
+            .blogMainChead {
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+            }
+            .blogMainCdescr {
+                padding-top: 30px;
+                box-sizing: border-box;
+                color: grey;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+            }
+        }
+    }
+}    
+
+@media screen and (max-width: 800px) {
+    body .blogMain {
+        display: block;
+        height: fit-content;
+    }
+    body .blogMain article.blogMainC {
+        height: fit-content;
+    }
+    body .blogMain article.blogMainC > div:nth-child(1) img {
+        height: 400px;
+    }
+    footer {
+        padding-top: 40px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    body .headDescC {
+        height: fit-content;
+    }
+    body .blogMain article.blogMainC > div:nth-child(1) img {
+        height: 300px;
+    }
+}
+
